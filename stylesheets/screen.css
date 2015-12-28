@@ -1,0 +1,525 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/***color-define**/
+/**********font-size define**************/
+/******body璁剧疆****/
+/* line 9, ../sass/screen.scss */
+body {
+  margin: 0px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+}
+
+/* line 16, ../sass/screen.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 20, ../sass/screen.scss */
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 22, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 25, ../sass/screen.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 27, ../sass/screen.scss */
+.page2-content, .header, .glist, .page3-content, .page4-content, .page5-content {
+  width: 1170px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 33, ../sass/screen.scss */
+p {
+  line-height: 26px;
+}
+
+/* line 37, ../sass/screen.scss */
+.button {
+  min-width: 200px;
+  min-height: 60px;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+  font-size: 18px;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+/* line 47, ../sass/screen.scss */
+.button.red {
+  background-color: #af2531;
+}
+/* line 50, ../sass/screen.scss */
+.button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border: 1px solid white;
+}
+
+/* line 61, ../sass/screen.scss */
+.page, .header-c, .group-list {
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1170px;
+}
+
+/* line 71, ../sass/screen.scss */
+.page-center {
+  text-align: center;
+}
+
+/* line 74, ../sass/screen.scss */
+.page1 {
+  position: relative;
+}
+
+/* line 77, ../sass/screen.scss */
+.page2 {
+  background-color: #06152d;
+  height: 740px;
+}
+
+/* line 86, ../sass/screen.scss */
+.banner-center {
+  font-size: 0px;
+  text-align: center;
+}
+
+/* line 90, ../sass/screen.scss */
+.header-c {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  top: 20px;
+}
+
+/* line 100, ../sass/screen.scss */
+.header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+/* line 106, ../sass/screen.scss */
+.header .header-logo {
+  float: left;
+  font-size: 0px;
+}
+/* line 110, ../sass/screen.scss */
+.header .header-menu {
+  float: right;
+}
+
+/* line 114, ../sass/screen.scss */
+.menu {
+  margin-top: 25px;
+}
+/* line 116, ../sass/screen.scss */
+.menu li {
+  float: left;
+  margin-right: 40px;
+}
+/* line 120, ../sass/screen.scss */
+.menu li.last-child {
+  margin-right: 0px;
+}
+/* line 122, ../sass/screen.scss */
+.menu a {
+  transition: all 0.5s;
+}
+/* line 125, ../sass/screen.scss */
+.menu a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 130, ../sass/screen.scss */
+.group-list {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 138, ../sass/screen.scss */
+.glist {
+  padding: 30px 0px 30px 0px;
+}
+/* line 141, ../sass/screen.scss */
+.glist > li {
+  float: left;
+}
+/* line 144, ../sass/screen.scss */
+.glist > li.glist-1 {
+  margin-top: 40px;
+  width: 20%;
+}
+/* line 148, ../sass/screen.scss */
+.glist > li.glist-2, .glist > li.glist-3, .glist > li.glist-4 {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 154, ../sass/screen.scss */
+.glist > li.glist-4 {
+  border-right: 0px;
+}
+
+/* line 160, ../sass/screen.scss */
+.page-content2-left {
+  float: left;
+  width: 62%;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+/* line 166, ../sass/screen.scss */
+.page-content2-right {
+  float: right;
+  width: 30%;
+  overflow: hidden;
+  font-size: 0px;
+  text-align: right;
+}
+
+/* line 177, ../sass/screen.scss */
+.title .title-en {
+  font-size: 40px;
+  line-height: 44px;
+}
+/* line 182, ../sass/screen.scss */
+.title .title-cn {
+  font-size: 22px;
+}
+
+/* line 188, ../sass/screen.scss */
+.page-content2-left .title {
+  margin-bottom: 20px;
+}
+
+/* line 193, ../sass/screen.scss */
+.page3 {
+  background-image: url(../img/p3-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 740px;
+}
+
+/* line 199, ../sass/screen.scss */
+.page3-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 204, ../sass/screen.scss */
+.page3-content-left {
+  width: 40%;
+  overflow: hidden;
+  float: left;
+  margin-top: 320px;
+}
+
+/* line 210, ../sass/screen.scss */
+.page3-content-right {
+  width: 50%;
+  float: right;
+  margin-top: 150px;
+}
+
+/* line 215, ../sass/screen.scss */
+.hornor-list {
+  margin-top: 30px;
+}
+/* line 217, ../sass/screen.scss */
+.hornor-list li {
+  float: left;
+  width: 25%;
+  height: 70px;
+}
+
+/* line 224, ../sass/screen.scss */
+.record-item {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 229, ../sass/screen.scss */
+.record-item .record-title {
+  float: left;
+  width: 15%;
+  font-size: 30px;
+}
+
+/* line 234, ../sass/screen.scss */
+.record-item .record-data {
+  width: 84%;
+  float: right;
+  line-height: 26px;
+  padding-left: 20px;
+  border-left: 1px solid #fff;
+  border-left: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* line 245, ../sass/screen.scss */
+.page4 {
+  background-image: url(../img/p4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 740px;
+}
+
+/* line 252, ../sass/screen.scss */
+.page4-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 257, ../sass/screen.scss */
+.page4-content .title {
+  margin-top: 60px;
+}
+
+/* line 260, ../sass/screen.scss */
+.p4-contxt {
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 180px;
+  margin-bottom: 30px;
+}
+
+/* line 267, ../sass/screen.scss */
+.page5 {
+  background-color: #06152d;
+}
+
+/* line 270, ../sass/screen.scss */
+.page5-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 252px;
+  padding-bottom: 252px;
+  position: relative;
+}
+
+/* line 278, ../sass/screen.scss */
+.page5-content-left {
+  width: 25%;
+  overflow: hidden;
+  float: left;
+}
+
+/* line 283, ../sass/screen.scss */
+.page5-content-right {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+  padding-left: 5%;
+  border-left: 1px solid #fff;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 292, ../sass/screen.scss */
+.group-info {
+  width: 100%;
+  line-height: 18px;
+}
+/* line 295, ../sass/screen.scss */
+.group-info .group-title, .group-info .group-desc {
+  margin-bottom: 5px;
+}
+/* line 297, ../sass/screen.scss */
+.group-info .group-title.more, .group-info .group-desc.more {
+  margin-top: 30px;
+}
+/* line 301, ../sass/screen.scss */
+.group-info .group-img {
+  margin-bottom: 20px;
+}
+/* line 304, ../sass/screen.scss */
+.group-info a {
+  transition: all 0.5s;
+}
+/* line 307, ../sass/screen.scss */
+.group-info a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 311, ../sass/screen.scss */
+.group-desc {
+  font-size: 12px;
+}
+
+/* line 314, ../sass/screen.scss */
+.page5-content-right .group-info {
+  float: left;
+  width: 33.33%;
+  overflow: hidden;
+}
+
+/* line 320, ../sass/screen.scss */
+.web-info {
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+}
+/* line 327, ../sass/screen.scss */
+.web-info a {
+  transition: all 0.5s;
+}
+/* line 330, ../sass/screen.scss */
+.web-info a:hover {
+  opacity: 0.5;
+}
+
+/* line 334, ../sass/screen.scss */
+.web-info-left {
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 338, ../sass/screen.scss */
+.web-info-right {
+  float: right;
+}
+/* line 341, ../sass/screen.scss */
+.web-info-right ul li {
+  float: left;
+  margin-left: 10px;
+}
+/* line 344, ../sass/screen.scss */
+.web-info-right ul li.first {
+  margin-top: 10px;
+}
+
+/* line 350, ../sass/screen.scss */
+.color-line {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+}
+/* line 357, ../sass/screen.scss */
+.color-line ul {
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+}
+/* line 362, ../sass/screen.scss */
+.color-line ul li {
+  float: left;
+  height: 3px;
+}
+/* line 368, ../sass/screen.scss */
+.color-line .line-1 {
+  background-color: #10345e;
+  width: 35%;
+  float: left;
+}
+/* line 374, ../sass/screen.scss */
+.color-line .line-2 {
+  background-color: #a2a7b9;
+  width: 20%;
+  float: left;
+}
+/* line 381, ../sass/screen.scss */
+.color-line .line-3 {
+  background-color: #ad232f;
+  width: 10%;
+  float: left;
+}
+/* line 387, ../sass/screen.scss */
+.color-line .line-4 {
+  background-color: #1993cf;
+  width: 35%;
+  float: left;
+}

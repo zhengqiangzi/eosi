@@ -1,0 +1,394 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import '_variable.scss';
+
+body{
+	margin:0px;
+	font-size:$body-font-size;
+	color:$body-color;
+	font-family:"Microsoft YaHei";
+
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+p{margin-top:10px;margin-bottom:10px;}
+
+*{
+	box-sizing:border-box; 
+}
+a{color:$body-color;text-decoration:none;}
+
+%content{
+	width:$page-min-width;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+p{
+		line-height:26px;
+
+}
+.button{
+	
+	min-width:200px;
+	min-height:60px;
+	text-align:center;
+	line-height:60px;
+	display:inline-block;
+	font-size:18px;
+	transition:all 0.5s;
+	border:1px solid rgba($bai,0);
+	&.red{
+		background-color:$hong;
+	}
+	&:hover{
+		background-color:transparent;
+		border:1px solid $bai;
+		border:1px solid rgba($bai,1);
+	}
+}
+
+%css3-center{
+	transform:translate3d(-50%,0px,0px);
+	left:50%;
+}
+%page-full{
+	width:100%;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:$page-min-width;
+}
+.page{
+	@extend %page-full;
+}
+.page-center{
+	text-align:center;
+}
+.page1{
+	position:relative;
+}
+.page2{
+	background-color:$lan;
+	height:740px;
+
+
+}
+.page2-content{
+	@extend %content;
+}
+.banner-center{
+	font-size:0px;
+	text-align:center;
+}
+.header-c{
+	@extend %page-full;
+	position:absolute;
+	left:0px;
+	top:0px;
+	text-align:center;
+	top:20px;
+}
+
+
+.header{
+	@extend %content;
+	padding-bottom:10px;
+	border-bottom:1px solid $bai;
+	border-bottom:1px solid rgba($bai,0.3);
+	display:inline-block;
+	& .header-logo{
+		float:left;
+		font-size:0px;
+	}
+	& .header-menu{
+		float:right;
+	}
+}
+.menu{
+		margin-top:25px;
+		& li{
+
+			float:left;
+			margin-right:40px;
+			&.last-child{margin-right:0px;}
+		}
+		& a{
+			transition:all 0.5s;
+		}
+		& a:hover{
+			color:rgba($bai,0.5);
+		}
+
+	}
+.group-list{
+	@extend %page-full;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background-color:$he;
+	background-color:rgba($he,0.8);
+}
+.glist{
+	@extend %content;
+	padding:30px 0px 30px 0px;
+	&>li{
+		float:left;
+
+		&.glist-1{
+			margin-top:40px;
+			width:20%;
+		}
+		&.glist-2,&.glist-3,&.glist-4{
+			width:25%;
+			text-align:center;
+			border-right:1px solid $bai;
+			border-right:1px solid rgba($bai,0.3);
+		}
+		&.glist-4{
+			border-right:0px;
+		}
+	}
+}
+
+.page-content2-left{
+	float:left;
+	width:62%;
+	overflow:hidden;
+	margin-top:80px;
+}
+.page-content2-right{
+	float:right;
+	width:30%;
+	overflow:hidden;
+	font-size:0px;
+	text-align:right;
+
+}
+
+.title{
+
+	& .title-en{
+		font-size:40px;
+		line-height:40px*1.1;
+	}
+
+	& .title-cn{
+		font-size:22px;
+	}
+
+}
+.page-content2-left{
+	& .title{
+		margin-bottom:20px;
+	}
+}
+
+.page3{
+	background-image:url(../img/p3-banner.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:740px;
+}
+.page3-content{
+	margin-left:auto;
+	margin-right:auto;
+	@extend %content;
+}
+.page3-content-left{
+	width:40%;
+	overflow:hidden;
+	float:left;
+	margin-top:320px;
+}
+.page3-content-right{
+	width:50%;
+	float:right;
+	margin-top:150px;
+}
+.hornor-list{
+	margin-top:30px;
+	& li{
+		float:left;
+		width:25%;
+		height:70px;
+	}
+}
+
+.record-item{
+	width:100%;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.record-item .record-title{
+	float:left;
+	width:15%;
+	font-size:30px;
+}
+.record-item .record-data{
+	width:84%;
+	float:right;
+	line-height:26px;
+	padding-left:20px;
+	border-left:1px solid $bai;
+	border-left:1px solid rgba($bai,0.9);
+
+
+}
+
+.page4{
+	background-image:url(../img/p4.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	min-height:740px;
+
+}
+.page4-content{
+		margin-left:auto;
+	margin-right:auto;
+	@extend %content;
+}
+.page4-content .title{
+		margin-top:60px;
+}
+.p4-contxt{
+	font-size:32px;
+	line-height:40px;
+	margin-top:180px;
+	margin-bottom:30px;
+}
+
+.page5{
+	background-color:$lan;
+}
+.page5-content{
+	margin-left:auto;
+	margin-right:auto;
+	@extend %content;
+	padding-top:252px;
+	padding-bottom:252px;
+	position:relative;
+}
+.page5-content-left{
+	width:25%;
+	overflow:hidden;
+	float:left;
+}
+.page5-content-right{
+	width:70%;
+	float:left;
+	overflow:hidden;
+	padding-left:5%;
+	border-left:1px solid $bai;
+	border-left:1px solid rgba($bai,0.5);
+}
+
+.group-info{
+	width:100%;
+	line-height:18px;
+	& .group-title,& .group-desc{
+		margin-bottom:5px;
+		&.more{
+			margin-top:30px;
+		}
+	}
+	& .group-img{
+		margin-bottom:20px;
+	}
+	& a{
+		transition:all 0.5s;
+	}
+	& a:hover{
+		color:rgba($bai,0.5);
+	}
+}
+.group-desc{
+	font-size:12px;
+ }
+.page5-content-right .group-info{
+	float:left;
+	width:33.33%;
+	overflow:hidden;
+}
+
+.web-info{
+	position:absolute;
+	left:0px;
+	bottom:20px;
+	width:100%;
+	font-size:12px;
+	height:40px;
+	& a{
+		transition:all 0.5s;
+	}
+	& a:hover{
+		opacity:0.5;
+	}
+}
+.web-info-left{
+	float:left;
+	margin-top:10px;
+}
+.web-info-right{
+	float:right;
+	& ul{
+		& li{
+			float:left;
+			margin-left:10px;
+			&.first{
+				margin-top:10px;
+			}
+		}
+	}
+}
+.color-line{
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:3px;
+	position:absolute;
+
+	& ul{
+		width:100%;
+		height:3px;
+		overflow:hidden;
+
+		& li{
+			float:left;
+			height:3px;
+		}
+	}
+
+	& .line-1{
+		background-color:#10345e;
+		width:35%;
+		float:left;
+	}
+
+	& .line-2{
+		background-color:rgba(#a2a7b9,1);
+		width:20%;
+		float:left;
+	}
+
+
+	& .line-3{
+		background-color:rgba(#ad232f,1);
+		width:10%;
+		float:left;
+	}
+
+	& .line-4{
+		background-color:rgba(#1993cf,1);
+		width:35%;
+		float:left;
+	}
+
+
+}

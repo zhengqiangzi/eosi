@@ -5,6 +5,9 @@
 
 @import "compass/reset";
 @import '_variable.scss';
+.banner-center,.group-list,.page2,.page3,.page4,.page5{
+	transition:all 0.5s;
+}
 
 body{
 	margin:0px;
@@ -94,6 +97,8 @@ p{
 	top:0px;
 	text-align:center;
 	top:20px;
+	transition:all 0.5s;
+
 }
 
 
@@ -392,3 +397,68 @@ p{
 
 
 }
+.toggleButton{
+		position:fixed;
+		clip:rect(0px,0px,0px,0px);
+		&+label{
+			position:fixed;
+			transition:all 0.5s;
+			display:none;
+			background-color:$lan;
+
+			left:0px;
+			top:0px;
+			width:40px;
+			height:40px;
+			z-index:2000000;
+			border:1px solid rgba($bai,0.3);
+			font-size:12px;
+			text-align:center;
+			padding-top:8px;
+				
+			&:before{
+				content:'';
+				position:absolute;
+				left:10%;
+				top:22px;
+				width:80%;
+				height:6px;
+				overflow:hidden;
+				border-bottom:2px solid rgba($bai,0.5);
+				border-top:2px solid rgba($bai,0.5);
+			}
+			&:after{
+				content:'';
+				position:absolute;
+				left:10%;
+				top:26px;
+				width:80%;
+				height:1px;
+				overflow:hidden;
+				border-top:2px solid rgba($bai,0.5);
+			}
+		}
+		&:checked+label{
+			left:50%;
+		}
+
+		&:checked+label+.all{
+
+			& .header-c{
+				transform:translate3d(0%,0px,0px);
+			}
+
+			& .banner-center,& .group-list,& .page2,& .page3,& .page4,& .page5{
+				transform:translate3d(50%,0px,0px);
+			}
+		}
+
+}
+.all{
+	
+	width:100%;
+	min-width:$page-min-width;
+	transition:all 0.5s;
+	overflow:hidden;
+}
+@import '_phone.scss';

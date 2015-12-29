@@ -1,0 +1,274 @@
+@media (max-width:500px){
+	%pd{
+				padding:0px 10px 0px 10px;
+
+	}
+	.all{
+		width:100%;
+		min-width:100%;
+	}
+	.page2-content,.page3-content,.page4-content,.web-info{
+	@extend %pd;
+	}
+	.page2-content, .header, .glist, .page3-content, .page4-content, .page5-content{
+		width:100%;
+		min-width:100%;
+	}
+	.page{min-width:100%;}
+	.header-c{
+		top:0px;
+		min-width:100%;
+	}
+	.header{
+		width:100%;
+	}
+	.header-logo{display:none;}
+	.group-list{
+		position:static;
+		min-width:100%;
+	}
+	.page1{
+		position:static;
+	}
+	.glist{
+		width:100%;
+		min-width:100%;
+		@extend %pd;
+		&>li{
+			border:0px solid #ff00ff;
+		}
+		&>li.glist-1{
+			width:100%;
+			margin-bottom:20px;
+			margin-top:20px;
+		}
+		&>li.glist-2{
+			width:33.3333%;
+			margin-bottom:20px;
+		}
+		&>li.glist-3{
+			width:33.3333%;
+			margin-bottom:20px;
+		}
+		&>li.glist-4{
+			width:33.3333%;
+			margin-bottom:20px;
+		}
+	}
+	.page2{
+		height:auto;
+	}
+	.page-content2-left,.page-content2-right{
+		width:100%;
+		float:none;
+		clear:both;
+		margin-top:20px;
+
+	}
+	.page-content2-right{
+		display:none;
+	}
+
+	.page3{
+		width:100%;
+		 min-width:100%;
+		 height:auto;
+		 background-position:left top;
+		 background-size:cover;
+	}
+	.page3-content-left{
+		width:100%;
+		clear:both;
+		float:none;
+		margin-top:20px;
+	}
+	.hornor-list{
+		margin-top:20px;
+	}
+	.hornor-list li{
+		width:25%;
+		text-align:center;
+	}
+	.page3-content-right{
+		width:100%;
+		clear:both;
+		float:none;
+		margin-top:20px;
+	}
+
+	.page4{
+		width:100%;
+		 min-width:100%;
+	 	height:auto;
+	 	min-height:0;
+	 	padding-bottom:30px;
+	 	&>.page4-content{
+		 	&>.title{
+		 		margin-top:20px;
+		 	}
+		 	&>.p4-contxt{
+		 		margin-top:20px;
+		 		font-size:16px;
+		 		line-height:22px;
+		 	}
+		 	&>.btn-c{
+		 		text-align:center;
+		 	}
+	 	}
+	 }
+	 .page5-content{
+	 	padding:30px 0px 30px 0px;
+	 }
+	 .page5-content-left,.page5-content-right{
+	 	width:100%;
+	 	clear:both;
+	 	float:none;
+	 }
+	 .group-info{
+	 	transform:translate3d(0px,0px,0px);
+	 	width:100%;
+	 	overflow:hidden;
+	 	&>li{
+	 		width:100%;
+	 		margin-right:10px;
+	 		text-align:center;
+	 	}
+	 }
+
+	 .page5-content-right{
+	 	padding-left:0px;
+	 	margin-top:10px;
+	 	border:0px;
+	 	& .group-info{
+	 		width:33.333%;
+	 		transform:translate3d(0px,0px,0px);
+	 		border-right:1px solid rgba($bai,0.3);
+	 		
+	 		&:last-child{
+	 			border:0px;
+	 		}
+	 	}
+	 	& .group-img{
+	 		width:100%;
+	 		text-align:center;
+	 		padding:0px 10px 0px 10px;
+	 		height:60px;
+	 	}
+	 	& .group-title,	& .group-desc{
+	 		display:none;
+	 	}
+
+	 }
+	 .web-info{
+	 	position:static;
+	 	height:auto;
+	 	width:100%;
+	 	overflow:hidden;
+	 }
+
+	 .title{
+	 	&>.title-en{	
+	 		font-size:20px;
+	 		line-height:24px;
+	 	}
+	 	&>.title-cn{	
+	 		font-size:16px;
+	 	}
+
+	 }
+
+	 .button{
+	 	min-width:120px;
+	 	min-height:40px;
+	 	line-height:40px;
+	 	font-size:16px;
+	 }
+}
+
+@media (max-width:414px){
+	
+	.toggleButton+label{
+		display:block;
+	}
+	.glist-3,.glist-2,.glist-4{
+		padding:0px 10px 0px 10px;
+	}
+	.record-item{
+		&>.record-title{
+			width:100%;
+			overflow:hidden;
+			margin-bottom:10px;
+		}
+
+		&>.record-data{
+			width:100%;
+			border-left:0px;
+			padding-left:0px;
+		}
+	}
+	.web-info-left{
+		width:100%;
+		clear:both;
+		float:none;
+		text-align:center;
+	}
+	.web-info-right{
+		width:50%;
+		clear:both;
+		float:none;
+		margin-top:10px;
+		text-align:center;
+		transform:translate3d(50%,0px,0px);
+		overflow:hidden;
+	}
+
+	.hornor-list>li{
+		padding:0px 10px 0px 10px;
+	}
+
+	.toggleButton{
+		display:block;
+
+	}
+	.header-c{
+		background-color:rgba(0,0,0,1);
+		height:100%;
+		width:50%;
+		min-width:50%;
+		position:fixed;
+		z-index:100000;
+		transform:translate3d(-100%,0px,0px);
+	}
+	.header{
+		border:0px;
+		padding-bottom:0px;
+		&>.header-menu{
+			width:100%;
+			overflow:hidden;
+			clear:both;
+			float:none;
+		}
+	}
+	.menu{
+		width:100%;
+		overflow:hidden;
+		margin-top:0px;
+
+		&>li{
+			width:100%;
+			overflow:hidden;
+			float:none;
+			margin:0px;
+
+			&>a{
+				width:100%;
+				display:block;
+				text-align:left;
+				text-indent:20px;
+				min-height:40px;
+				line-height:40px;
+
+			}
+		}
+	}
+}

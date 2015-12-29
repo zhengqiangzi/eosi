@@ -2,7 +2,6 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
   entry:{
    index:['es5-shim','es5-shim/es5-sham','./index.js'],
   },
@@ -36,7 +35,12 @@ module.exports = {
 
       }
     ]
-  }
+  },
+  plugins:[
+    new webpack.ProvidePlugin({
+         $: 'jquery'
+    })
+  ]
 
 }
 

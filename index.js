@@ -1,4 +1,5 @@
 import scrollTo from 'jquery.scrollto';
+var style=require('screen')
 
 $(document).ready(function(){
 

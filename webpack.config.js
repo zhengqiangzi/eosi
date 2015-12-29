@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
-
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+console.log(webpack.optimize)
 module.exports = {
   entry:{
    index:['es5-shim','es5-shim/es5-sham','./index.js'],
@@ -26,7 +27,7 @@ module.exports = {
       },
       {
         test:/\.css$/,
-        loader:"style!css!autoprefixer"
+        loader:ExtractTextPlugin.extract("css!autoprefixer")
 
       },
       {
@@ -37,9 +38,11 @@ module.exports = {
     ]
   },
   plugins:[
+
     new webpack.ProvidePlugin({
-         $: 'jquery'
-    })
+     $: 'jquery'
+    }),
+    new ExtractTextPlugin("style.css")
   ]
 
 }

@@ -1,3 +1,6 @@
+<?php
+	$version=rand(1,1000000);
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -12,7 +15,7 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<link type="text/css" rel='styleSheet' href='./dist/style.css?rand=1111aa111'/>
+	<link type="text/css" rel='styleSheet' href='./dist/style.css?rand=<?php echo $version;?>'/>
   </head>
   <body>
 
@@ -48,7 +51,7 @@
 
 
 			<div class="page page2">
-					<a name='page2'></a>
+				<a name='page2'></a>
 
 				<div class="page2-content">
 					
@@ -81,7 +84,6 @@
 			<div class="page page3">
 
 					<a name='page3'></a>
-
 				<div class="page3-content">
 
 						<div class="page3-content-left">
@@ -168,7 +170,7 @@
 
 
 		  	<div class="page page5">
-					<a name='page5'></a>
+				<a name='page5'></a>
 				<div class="page5-content">
 					<div class="page5-content-left">
 						<ul class='group-info'>
@@ -246,14 +248,11 @@
 						</ul>
 
 					</div>
-
-
-
 				</div>
 			</div>
 </div>
 
 
-  	<script type="text/javascript" src='dist/bundle.js'></script>
+  	<script type="text/javascript" src='dist/bundle.js?rand=<?php echo $version;?>'></script>
   </body>
   </html>

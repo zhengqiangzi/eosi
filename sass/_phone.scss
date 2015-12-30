@@ -7,10 +7,10 @@
 		width:100%;
 		min-width:100%;
 	}
-	.page2-content,.page3-content,.page4-content,.web-info{
-	@extend %pd;
+	.page2-content,.page3-content,.page4-content,.web-info,.joinus{
+		@extend %pd;
 	}
-	.page2-content, .header, .glist, .page3-content, .page4-content, .page5-content{
+	.page2-content, .header, .glist, .page3-content, .page4-content, .page5-content,.joinus-content{
 		width:100%;
 		min-width:100%;
 	}
@@ -183,6 +183,37 @@
 	 	line-height:40px;
 	 	font-size:16px;
 	 }
+
+	 .join-top-left{
+	 	width:100%;
+
+	 }
+	 .join-top-right{
+	 	width:100%;
+	 	
+	 }
+	 .joinus-content{
+	 	margin-top:70px;
+	 }
+	 .sites{
+	 	width:100%;
+	 	&.left{width:100%;}
+	 	&.right{width:100%;}
+	 }
+	 .title2{
+	 	font-size:22px;
+	 	line-height:32px;
+	 }
+	 .sites-title{
+	 	font-size:16px;
+	 }
+	 .join-top-right-button{
+	 	font-size:14px;
+	 }
+	 .join-top-right-title{
+	 	font-size:22px;
+	 	line-height:30px;
+	 }
 }
 
 @media (max-width:414px){
@@ -271,4 +302,11 @@
 			}
 		}
 	}
+	 .joinus-content{
+	 	margin-top:10px;
+	 }
+	 	.join-top-right-title{
+	 	font-size:16px;
+	 	line-height:22px;
+	 }
 }

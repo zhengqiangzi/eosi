@@ -12,4 +12,17 @@ $(document).ready(function(){
 		$('.toggleButton').removeAttr('checked')
 
 	})
+
+
+	$('.toggleButton').change(function(){
+
+		var flag=$(this).prop('checked');
+		if(flag==true)
+		{
+			$(document.body).addClass('showMenu')
+		}else{
+				
+			$(document.body).removeClass('showMenu')
+		}
+	})
 })  
